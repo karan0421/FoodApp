@@ -42,7 +42,7 @@ body{
 }
 
 .hero-section .watch-icon-btn:hover {
-  box-shadow: 6px 35px 45px 0px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  box-shadow: 6px 35px 45px 0px rgba(0, 0, 0, 0.2); 
   }
 
   .categories-section h5{

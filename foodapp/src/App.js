@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Navbar,
-  Nav,
-  Button,
-  Container,
-  Row,
-  Col,
-  Card,
-} from "react-bootstrap";
+import { Navbar, Nav, Button, Container, Row, Col } from "react-bootstrap";
 import "./App.css";
 
 const App = () => {
@@ -40,21 +32,21 @@ const App = () => {
       description: "Description of the item",
       price: "$24.00",
       rating: 4.9,
-      image: "fattoush_salad.png", // Replace with actual image URL
+      image: "fattoush_salad.png",
     },
     {
       name: "Vegetable salad",
       description: "Description of the item",
       price: "$26.00",
       rating: 4.6,
-      image: "vegetable_salad.png", // Replace with actual image URL
+      image: "vegetable_salad.png",
     },
     {
       name: "Egg vegi salad",
       description: "Description of the item",
       price: "$23.00",
       rating: 4.5,
-      image: "egg_salad.png", // Replace with actual image URL
+      image: "egg_salad.png",
     },
   ];
 
@@ -62,22 +54,22 @@ const App = () => {
     {
       name: "Catering",
       description: "Delight your guests with our flavors and  presentation",
-      image: "fi-rr-salad.png", // Replace with actual image URL
+      image: "fi-rr-salad.png",
     },
     {
       name: "Fast delivery",
       description: "We deliver your order promptly to your door",
-      image: "fi-rr-time-fast.png", // Replace with actual image URL
+      image: "fi-rr-time-fast.png",
     },
     {
       name: "Online Ordering",
       description: "Explore menu & order with ease using our Online Ordering ",
-      image: "fi-rr-shopping-cart-check.png", // Replace with actual image URL
+      image: "fi-rr-shopping-cart-check.png",
     },
     {
       name: "Gift Cards",
       description: "Give the gift of exceptional dining with Foodi Gift Cards",
-      image: "fi-rr-gift.png", // Replace with actual image URL
+      image: "fi-rr-gift.png",
     },
   ];
   return (
@@ -98,11 +90,12 @@ const App = () => {
                 Home
               </Nav.Link>
               <Nav.Link href="#menu" style={{ margin: "10px" }}>
-                Menu <img src="arrow.png" style={{ width: "10px" }} />
+                Menu <img alt="" src="arrow.png" style={{ width: "10px" }} />
               </Nav.Link>
               <Nav.Link href="#services" style={{ margin: "10px" }}>
                 Services{" "}
                 <img
+                  alt=""
                   src="arrow.png"
                   style={{ width: "10px", margin: "10px" }}
                 />
@@ -113,14 +106,14 @@ const App = () => {
             </Nav>
           </Navbar.Collapse>
           <div>
-            <img src="Vector.png" />
-            <img src="bag.png" style={{ marginLeft: "40px" }} />
+            <img alt="" src="Vector.png" />
+            <img alt="" src="bag.png" style={{ marginLeft: "40px" }} />
             <Button
               style={{ marginLeft: "40px" }}
               variant="success"
               className="explore-btn"
             >
-              <img src="call.png" /> Contact
+              <img alt="" src="call.png" /> Contact
             </Button>
           </div>
         </Container>
@@ -147,6 +140,7 @@ const App = () => {
               </Button>
               <Button variant="text-secondary" className="watch-icon-btn">
                 <img
+                  alt=""
                   src="Polygon.png"
                   style={{ width: "15px", paddingBottom: "4px" }}
                 />
@@ -194,6 +188,7 @@ const App = () => {
               <Col md={3} xs={6}>
                 <div className="category-card">
                   <img
+                    alt=""
                     style={{ width: "100px", height: "100px" }}
                     src={item.image}
                   />
@@ -217,10 +212,10 @@ const App = () => {
               <h1 className="fw-bolder">Standout Dishes From Our Menu</h1>
               <div className="d-flex">
                 <Button variant="text-secondary" className="left-arrow-btn">
-                  <img src="left-arrow.png" />
+                  <img alt="" src="left-arrow.png" />
                 </Button>
                 <Button variant="text-secondary" className="right-arrow-btn">
-                  <img src="right-arrow.png" />
+                  <img alt="" src="right-arrow.png" />
                 </Button>
               </div>
             </div>
@@ -255,30 +250,34 @@ const App = () => {
       </Container>
 
       <Container>
-      <div className="testimonial-container">
-            <div className="testimonial-left">
-                <img src="chef_img.png" alt="Chef" className="chef-image" />
-            </div>
-            <div className="testimonial-right">
-                <h6>TESTIMONIALS</h6>
-                <h1>What Our Customers Say About Us</h1>
-                <p>“I had the pleasure of dining at Foodi last night, and I'm still raving about the experience! The attention to detail in presentation and service was impeccable.”</p>
-                <div className="customer-feedback">
-                    <div className="avatars">
-                        <img src="mask_1.png" alt="avatar1" />
-                        <img src="mask_2.png" alt="avatar2" />
-                        <img src="mask_3.png" alt="avatar3" />
-                    </div>
-                    <div className="feedback-rating">
-                        <h6>Customer Feedback</h6>
-                        <div className='d-flex'>
-
-                        <span className="emoji">⭐</span><span>4.9</span> 
-                        <span className='review'>(18.6k Reviews)</span>
-                        </div>
-                    </div>
+        <div className="testimonial-container">
+          <div className="testimonial-left">
+            <img src="chef_img.png" alt="Chef" className="chef-image" />
+          </div>
+          <div className="testimonial-right">
+            <h6>TESTIMONIALS</h6>
+            <h1>What Our Customers Say About Us</h1>
+            <p>
+              “I had the pleasure of dining at Foodi last night, and I'm still
+              raving about the experience! The attention to detail in
+              presentation and service was impeccable.”
+            </p>
+            <div className="customer-feedback">
+              <div className="avatars">
+                <img src="mask_1.png" alt="avatar1" />
+                <img src="mask_2.png" alt="avatar2" />
+                <img src="mask_3.png" alt="avatar3" />
+              </div>
+              <div className="feedback-rating">
+                <h6>Customer Feedback</h6>
+                <div className="d-flex">
+                  <span className="emoji">⭐</span>
+                  <span>4.9</span>
+                  <span className="review">(18.6k Reviews)</span>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
       </Container>
 
@@ -305,7 +304,7 @@ const App = () => {
                     <Col md={6} xs={12}>
                       <div className="service-card">
                         <img
-                        alt={`service_card_${index}`}
+                          alt={`service_card_${index}`}
                           style={{ width: "64px", height: "64px" }}
                           src={item.image}
                         />
@@ -395,13 +394,31 @@ const App = () => {
             style={{ display: "flex", alignItems: "center" }}
           >
             <Col md={4}>
-              <img src="facebook.png"  style={{width: "48px", marginRight: "12px"}}/>
-              <img src="instagram.png" style={{width: "48px", marginRight: "12px"}}/>
-              <img src="twitter.png" style={{width: "48px", marginRight: "12px"}}/>
-              <img src="youtube.png" style={{width: "48px", marginRight: "12px"}}/>
+              <img
+                alt=""
+                src="facebook.png"
+                style={{ width: "48px", marginRight: "12px" }}
+              />
+              <img
+                alt=""
+                src="instagram.png"
+                style={{ width: "48px", marginRight: "12px" }}
+              />
+              <img
+                alt=""
+                src="twitter.png"
+                style={{ width: "48px", marginRight: "12px" }}
+              />
+              <img
+                alt=""
+                src="youtube.png"
+                style={{ width: "48px", marginRight: "12px" }}
+              />
             </Col>
             <Col md={8}>
-              <p className="m-auto" style={{color: "#555555"}}>Copyright &copy; 2023 Dscode | All rights reserved.</p>
+              <p className="m-auto" style={{ color: "#555555" }}>
+                Copyright &copy; 2023 Dscode | All rights reserved.
+              </p>
             </Col>
           </Row>
         </Container>
